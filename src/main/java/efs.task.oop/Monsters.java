@@ -33,5 +33,5 @@ public class Monsters {
         }
     };
 
-    public static int monstersHealth = Andariel.getHealth() + Blacksmith.getHealth();
+    public static int monstersHealth = andariel.getHealth() + blacksmith.getHealth();
 }
