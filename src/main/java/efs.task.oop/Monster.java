@@ -4,7 +4,7 @@ public abstract class Monster implements Fighter {
     protected int health;
     private int damage;
 
-    protected Monster(int health, int damage) {
+    public Monster(int health, int damage) {
         this.health = health;
         this.damage = damage;
     }
