@@ -29,16 +29,16 @@ public class Main {
             Random random = new Random();
             i = random.nextInt(n);
 
-            if(monsters.Andariel.getHealth() > 0) {
-                villagers[i].attack(monsters.Andariel);
+            if(monsters.andariel.getHealth() > 0) {
+                villagers[i].attack(monsters.andariel);
             }else{
-                villagers[i].attack(monsters.Blacksmith);
+                villagers[i].attack(monsters.blacksmith);
             }
 
-            if(monsters.Andariel.getHealth()>0) {
-                monsters.Andariel.attack(villagers[i]);
+            if(monsters.andariel.getHealth()>0) {
+                monsters.andariel.attack(villagers[i]);
             }else {
-                monsters.Blacksmith.attack(villagers[i]);
+                monsters.blacksmith.attack(villagers[i]);
             }
 
             if(villagers[i].getHealth() == 0){
